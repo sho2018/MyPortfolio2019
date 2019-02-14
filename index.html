@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:900"
+      rel="stylesheet"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <h2 class="logo">SHO_INENAGA</h2>
+      <input type="checkbox" id="chk" />
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+      <ul class="menu">
+        <a onclick="showmodal()" href="#">ABOUT</a>
+        <a onclick="showcontainer()" href="#">WORKS</a>
+        <a onclick="showskills()" href="#">MYSKILLS</a>
+        <a onclick="showcontact()" href="#">CONTACT</a>
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </div>
+
+    <div class="section-top">
+      <div class="img"></div>
+    </div>
+    <div class="modal">
+      <img src="images/sho.png" alt="" />
+      <div class="content">
+        <h1>SHO_INENAGA</h1>
+        <p>
+          休みの日等に開発の手伝いをしています。javaでの小規模のシステム開発、HTML、CSS、Javascriptを使ってWebサイトを作るお手伝いをしています。
+        </p>
+        <div onclick="hidemodal()" class="hide fas fa-times"></div>
+      </div>
+    </div>
+
+    <div class="section-top2">
+      <div class="skills">
+        <h1>Myskills</h1>
+        <li>
+          <h3>HTML5/CSS3</h3>
+          <span class="bar">
+            <span class="html"></span>
+          </span>
+        </li>
+
+        <li>
+          <h3>JAVASCRIPT</h3>
+          <span class="bar">
+            <span class="javascript"></span>
+          </span>
+        </li>
+
+        <li>
+          <h3>C</h3>
+          <span class="bar">
+            <span class="c"></span>
+          </span>
+        </li>
+
+        <li>
+          <h3>JAVA</h3>
+          <span class="bar">
+            <span class="java"></span>
+          </span>
+        </li>
+
+        <li>
+          <h3>MYSQL</h3>
+          <span class="bar">
+            <span class="mysql"></span>
+          </span>
+        </li>
+        <div onclick="hideskills()" class="hide fas fa-times"></div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="contact">
+        <h1>Contact Us</h1>
+        <div class="txtb">
+          <label>FULL Name :</label>
+          <input type="text" name="" value="" placeholder="Enter Your Name" />
+        </div>
+
+        <div class="txtb">
+          <label>E-mail :</label>
+          <input
+            type="email"
+            name=""
+            value=""
+            placeholder="Enter Your E-mail"
+          />
+        </div>
+
+        <div class="txtb">
+          <label>Subject :</label>
+          <input
+            type="text"
+            name=""
+            value=""
+            placeholder="Enter Your Subject"
+          />
+        </div>
+
+        <div class="txtb">
+          <label>Message :</label>
+          <textarea></textarea>
+        </div>
+        <a class="btn">Send</a>
+        <div onclick="hidecontact()" class="hide fas fa-times"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="contact-method">
+        <i class="fab fa-css3-alt"></i>
+        <a href="images/LaidPark.png" target="”_blank”"
+          ><span>LAID PARK</span></a
+        >
+      </div>
+
+      <div class="contact-method">
+        <i class="fab fa-js"></i>
+        <a href="assessment/assessment.html" target="”_blank”"
+          ><span>6つ子診断</span></a
+        >
+      </div>
+
+      <div class="contact-method">
+        <i class="fas fa-graduation-cap"></i>
+        <a href="images/java2.jpg" target="”_blank”"><span>java講座</span></a>
+      </div>
+      <div onclick="hidecontainer()" class="hide fas fa-times-circle"></div>
+    </div>
+    <div class="footer">
+      <h1>&copy2018 SHO_INENAGA</h1>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

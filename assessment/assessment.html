@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>６つ子診断</title>
+    <link rel="stylesheet" href="assessment.css" />
+  </head>
+
+  <body>
+    <div class="box1">
+      <div class="title">
+        <h1>６つ子診断</h1>
+      </div>
+      <div class="subtitle">
+        <p>あなたの名前を入れて下さい</p>
+      </div>
+      <div class="text">
+        <input type="text" id="name" size="40" maxlength="20" />
+      </div>
+      <div class="button">
+        <button type="button">
+          <img src="../images/matuicon.png" id="assessment" alt="" />
+        </button>
+      </div>
+      <div id="result"></div>
+      <div id="tweet">
+        <a
+          href="https://twitter.com/intent/tweet?button_hashtag=あなたは何松？&ref_src=twsrc%5Etfw"
+          class="twitter-hashtag-button"
+          data-text="○松"
+          data-show-count="false"
+          >Tweet #あなたは何松？</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <script src="assessment.js"></script>
+    </div>
+  </body>
+</html>

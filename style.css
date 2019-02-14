@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/************************header*********************/
+.header {
+  height: 100px;
+  background: #34495e;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.logo {
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.menu {
+  float: right;
+  line-height: 100px;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.show-menu-btn,
+.hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.show-menu-btn {
+  float: right;
+}
+
+.show-menu-btn {
+  line-height: 100px;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+  color: #3498db;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media (max-width: 768px) {
+  .show-menu-btn,
+  .hide-menu-btn {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #chk:checked ~ .menu {
+    right: 0;
+  }
+}
+
+/*********************************top***********************************/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.section-top {
+  width: 100%;
+  height: 90%;
+}
+.img {
+  background-image: url(images/image1.jpeg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slide 10s infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(images/image1.jpeg);
+  }
+
+  33% {
+    background-image: url(images/image2.jpeg);
+  }
+
+  67% {
+    background-image: url(images/image3.jpeg);
+  }
+}
+
+@media (max-width: 600px) {
+  .img {
+    max-width: 100%;
+    background-position: center;
+  }
+}
+/************************modal************************/
+.modal {
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+  background: #34495e;
+  position: fixed;
+  bottom: -300px;
+  right: 20px;
+  transition: 1s;
+}
+
+.modal img {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.modal .content {
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+  float: left;
+  color: white;
+}
+
+.content h1 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.content p {
+  font-size: 15px;
+}
+
+.hide {
+  position: absolute;
+  z-index: 9999;
+  top: 14px;
+  right: 14px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hide:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: 300px;
+    height: 120px;
+    right: 10px;
+  }
+  .modal img {
+    width: 120px;
+    height: 120px;
+    float: left;
+  }
+  .modal .content {
+    width: 170px;
+    padding: 7px 7px 7px 7px;
+  }
+
+  .content h1 {
+    font-size: 17px;
+    padding-bottom: 3px;
+  }
+
+  .content p {
+    font-size: 5px;
+  }
+}
+
+/**********************skills*********************/
+.section-top2 {
+  position: absolute;
+}
+
+.skills {
+  width: 800px;
+  top: 120px;
+  height: 470px;
+  overflow: hidden;
+  background: #34495e;
+  position: fixed;
+  top: -1000px;
+  left: 20px;
+  transition: 1s;
+  width: 500px;
+  color: white;
+}
+
+.hide {
+  position: absolute;
+  z-index: 9999;
+  top: 14px;
+  right: 14px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hide:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+* {
+  font-family: sans-serif;
+  list-style: none;
+}
+
+body {
+  background: #333;
+}
+
+.skills h1 {
+  padding-left: 20px;
+  padding-top: 14px;
+}
+
+.skills li {
+  margin: 40px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: #2187e7;
+}
+
+.html {
+  width: 60%;
+  animation: html 10s;
+}
+
+.javascript {
+  width: 70%;
+  animation: javascript 10s;
+}
+
+.c {
+  width: 65%;
+  animation: c 10s;
+}
+
+.java {
+  width: 80%;
+  animation: java 10s;
+}
+
+.mysql {
+  width: 65%;
+  animation: mysql 10s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes c {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    width: 280px;
+    height: 360px;
+  }
+  .skills h1 {
+    font-size: 25px;
+  }
+
+  .skills li {
+    margin: 25px 0;
+  }
+
+  .skills h3 {
+    font-size: 15px;
+  }
+}
+/*********************contact********************/
+.contact-form {
+  position: absolute;
+  top: 11%;
+  left: 70%;
+}
+
+.contact {
+  width: 85%;
+  max-width: 600px;
+  height: 570px;
+  background: #f1f1f1;
+  padding: 15px 40px;
+  overflow: hidden;
+  position: fixed;
+  right: -700px;
+  top: 20px;
+  transition: 1s;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form h1 {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.txtb {
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.btn {
+  display: inline-block;
+  background: gray;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    width: 310px;
+    height: 400px;
+    padding: 5px 25px;
+    top: 75px;
+  }
+  .txtb {
+    margin: 5px 0;
+    padding: 0px 7px;
+  }
+
+  .txtb label {
+    font-size: 8px;
+  }
+  .txtb input,
+  .txtb textarea {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+}
+/***************************mail_tel*********************************/
+.container {
+  position: absolute;
+  width: 60%;
+  top: 700px;
+  left: -900px;
+  top: px;
+  transform: translateY(-50%);
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  transition: 1s;
+}
+
+.contact-method {
+  width: 220px;
+  height: 140px;
+  display: inline-block;
+  background: #3498db;
+  margin: 10px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.contact-method i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  line-height: 140px;
+  background: #34495e;
+  z-index: 1;
+  transition: transform 0.6s;
+}
+
+.contact-method span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+  color: white;
+}
+
+.contact-method:hover i {
+  transform: translateY(-40px);
+}
+@media (max-width: 600px) {
+  .container {
+    position: absolute;
+    width: 80%;
+    top: 340px;
+  }
+
+  .contact-method {
+    width: 150px;
+    height: 120px;
+    margin: 5px;
+  }
+
+  .contact-method i {
+    font-size: 30px;
+    line-height: 120px;
+  }
+
+  .contact-method span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 8px 0;
+    color: white;
+  }
+}
+/*****************************footer******************************/
+.footer h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 30px;
+  text-align: center;
+  margin: 0;
+  background: url(./images/bg3.jpeg) 50% 50%;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@media (max-width: 600px) {
+  .footer h1 {
+    font-size: 18px;
+    letter-spacing: 12px;
+  }
+}
