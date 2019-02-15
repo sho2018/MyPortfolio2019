@@ -1,6 +1,9 @@
 # Portfolio2019
 MyPortfolioSite SHO_INENAGA/ver 0.0
 
+## Note
+Some bugs are occurring when CSS is not applied when opening from a smartphone. Images are not displayed etc.
+Please look from the PC.
 
 ## Website name
 SHO_INENAGA
