@@ -473,7 +473,7 @@ body {
 /***************************mail_tel*********************************/
 .container {
   position: absolute;
-  width: 57%;
+  width: 800px;
   top: 700px;
   left: -900px;
   top: px;
@@ -547,6 +547,7 @@ body {
     color: white;
   }
 }
+
 /*****************************footer******************************/
 .footer h1 {
   font-size: 60px;
